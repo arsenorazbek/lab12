@@ -17,13 +17,13 @@ text1.innerHTML = "In this task you have to reproduce this HTML page as is using
 
 document.body.appendChild(text1);
 
-const list1 = ["find elements in the DOM (5 points);", "create/add/remove elements (5 points);", "change content of the elements (5 points);", "change styles of the elements (5 points);", "change attributes of the elements (5 points);", "change classes of the elements (5 points). "];
+const list1 = ["find elements in the DOM <b>(5 points)</b>;", "create/add/remove elements <b>(5 points)</b>;", "change content of the elements <b>(5 points)</b>;", "change styles of the elements <b>(5 points)</b>;", "change attributes of the elements <b>(5 points)</b>;", "change classes of the elements <b>(5 points)</b>. "];
 
 function list(x) {
   const ulTag = document.createElement('ul');
   for (let i=0; i<x.length; i++){
       const liTag = document.createElement('li');
-      liTag.innerText = x[i];
+      liTag.innerHTML = x[i];
       if (i%2===0){
         liTag.style.color = "green";
         liTag.classList.add("even")
@@ -61,7 +61,7 @@ let text3 = document.createElement("p");
 text3.innerHTML = "To submit your work, follow these instructions:";
 document.body.appendChild(text3);
 
-const list2 = ["Create a new repository on Github, named lab12 (1 point).", "Clone this repository to your local machine and work inside it.", "Create a new HTML file, called index.html, which has only one <h1> tag with ''Hello, World!'' message (1 point).", "Create a new JavaScript file, called main.js, which must contain your program (assignment) described above (1 point). ", "Link this main.js file to your index.html file (Note: place your script at the end of the body section).", "Write a JavaScript program in main.js to make your index.html look identical to this HTML file (5 points). ", "After you finish your work, submit it to the Github (2 points)."];
+const list2 = ["Create a new repository on Github, named <b>lab12 (1 point)</b>.", "Clone this repository to your local machine and work inside it.", "Create a new HTML file, called <b>index.html</b>, which has only one ≮h1> tag with ''Hello, World!'' message <b>(1 point)</b>.", "Create a new JavaScript file, called <b>main.js</b>, which must contain your program (assignment) described above <b>(1 point)</b>. ", "Link this <b>main.js</b> file to your <b>index.html</b> file (Note: place your script at the end of the <b>body</b> section).", "Write a JavaScript program in <b>main.js</b> to make your <b>index.html</b> look identical to this HTML file <b>(5 points)</b>. ", "After you finish your work, submit it to the Github <b>(2 point)</b>."];
 
 list(list2);
 
